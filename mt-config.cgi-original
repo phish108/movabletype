@@ -12,7 +12,7 @@
 ################################################################
 
 # The CGIPath is the URL to your Movable Type directory
-CGIPath    http://www.example.com/cgi-bin/mt/
+CGIPath    BASE_URL
 
 # The StaticWebPath is the URL to your mt-static directory
 # Note: Check the installation documentation to find out
@@ -32,7 +32,7 @@ ObjectDriver DBI::mysql
 Database DATABASE_NAME
 DBUser DATABASE_USERNAME
 DBPassword DATABASE_PASSWORD
-DBHost localhost
+DBHost DATABASE_HOST
 
 ## Change setting to language that you want to using.
 DefaultLanguage en_US
