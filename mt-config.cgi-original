@@ -12,16 +12,12 @@
 ################################################################
 
 # The CGIPath is the URL to your Movable Type directory
-CGIPath    http://www.example.com/cgi-bin/mt/
+CGIPath    BASE_URL
 
-# The StaticWebPath is the URL to your mt-static directory
-# Note: Check the installation documentation to find out 
-# whether this is required for your environment.  If it is not,
-# simply remove it or comment out the line by prepending a "#".
-StaticWebPath    http://www.example.com/mt-static
+ImageDriver GD
 
 #================ DATABASE SETTINGS ==================
-#   CHANGE setting below that refer to databases 
+#   CHANGE setting below that refer to databases
 #   you will be using.
 
 ##### MYSQL #####
@@ -29,7 +25,7 @@ ObjectDriver DBI::mysql
 Database DATABASE_NAME
 DBUser DATABASE_USERNAME
 DBPassword DATABASE_PASSWORD
-DBHost localhost
+DBHost DATABASE_HOST
 
 ## Change setting to language that you want to using.
 DefaultLanguage en_US
@@ -38,4 +34,3 @@ DefaultLanguage en_US
 #DefaultLanguage fr
 #DefaultLanguage ja
 #DefaultLanguage nl
-
