@@ -12,8 +12,11 @@
 ################################################################
 
 # The CGIPath is the URL to your Movable Type directory
-CGIPath    BASE_URL
+# This should be an absolute path like '/' or '/mt/' and NOT a FQDN
 
+CGIPath    /
+
+# The ImageDriver in my containers is always GD
 ImageDriver GD
 
 #================ DATABASE SETTINGS ==================
